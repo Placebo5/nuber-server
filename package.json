@@ -6,12 +6,20 @@
   "author": "rpdmfms56 <ssss8843@naver.com>",
   "license": "MIT",
   "dependencies": {
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "cors": "^2.8.5",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^3.21.1",
+    "merge-graphql-schemas": "^1.7.0",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
     "nodemon": "^1.19.2",
-    "tslint-config-prettier": "^1.18.0"
+    "ts-node": "^8.4.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
   }
 }
